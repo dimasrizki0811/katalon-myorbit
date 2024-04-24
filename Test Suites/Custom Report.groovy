@@ -542,6 +542,7 @@ def tearDown() {
 			FileOutputStream out = new FileOutputStream(targetReportDiretory +separator +getFolderName +separator +"report " +currentDateTime  +".docx");
 			document.write(out);
 			out.close();
+			Thread.sleep(10000);
 			
 //					FileOutputStream out = new FileOutputStream("create_table.docx");
 //					document.write(out);
