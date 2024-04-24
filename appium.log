@@ -1,12 +1,12 @@
 [35m[Appium][39m Welcome to Appium v2.5.1 (REV e5fefd73cd97cd36ae3af29551f529ae59b333d6)
 [35m[Appium][39m Non-default server args:
-[35m[Appium][39m { basePath: [32m'/wd/hub'[39m, loglevel: [32m'info'[39m, port: [33m58116[39m }
+[35m[Appium][39m { basePath: [32m'/wd/hub'[39m, loglevel: [32m'info'[39m, port: [33m53867[39m }
 [35m[Appium][39m Attempting to load driver xcuitest...
 [35m[Appium][39m Attempting to load driver uiautomator2...
-[Appium] Appium REST http interface listener started on http://0.0.0.0:58116/wd/hub
+[Appium] Appium REST http interface listener started on http://0.0.0.0:53867/wd/hub
 [Appium] You can provide the following URLs in your client code to connect to this server:
-[Appium] 	http://127.0.0.1:58116/wd/hub (only accessible from the same host)
-[Appium] 	http://10.0.70.239:58116/wd/hub
+[Appium] 	http://127.0.0.1:53867/wd/hub (only accessible from the same host)
+[Appium] 	http://192.168.232.191:53867/wd/hub
 [Appium] Available drivers:
 [Appium]   - xcuitest@7.13.0 (automationName 'XCUITest')
 [Appium]   - uiautomator2@2.45.1 (automationName 'UiAutomator2')
@@ -15,251 +15,93 @@
 [Appium] No plugins activated. Use the --use-plugins flag with names of plugins to activate
 [38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [38;5;0m[HTTP][0m {}
-[38;5;0m[HTTP][0m <-- GET /wd/hub/status 200 6 ms - 199
+[38;5;0m[HTTP][0m <-- GET /wd/hub/status 200 7 ms - 199
 [38;5;0m[HTTP][0m 
 [38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [38;5;0m[HTTP][0m {}
 [38;5;0m[HTTP][0m <-- GET /wd/hub/status 200 1 ms - 199
 [38;5;0m[HTTP][0m 
 [38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
-[38;5;0m[HTTP][0m {"desiredCapabilities":{"appium:systemPort":8281,"appium:udid":"6109daca","appium:autoGrantPermissions":true,"appium:newCommandTimeout":1800,"appium:platformName":"ANDROID","appium:appActivity":".Settings","appium:deviceName":"Xiaomi M2012K11AG (Android 12)","platformName":"Android","appium:automationName":"uiautomator2","appium:platformVersion":"12","appium:appPackage":"com.android.settings"},"capabilities":{"firstMatch":[{"appium:appActivity":".Settings","appium:appPackage":"com.android.settings","appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","appium:deviceName":"Xiaomi M2012K11AG (Android 12)","appium:newCommandTimeout":1800,"appium:platformName":"ANDROID","appium:platformVersion":"12","appium:systemPort":8281,"appium:udid":"6109daca","platformName":"android"}]}}
+[38;5;0m[HTTP][0m {"desiredCapabilities":{"appium:systemPort":8222,"appium:udid":"6109daca","appium:autoGrantPermissions":true,"appium:newCommandTimeout":1800,"appium:platformName":"ANDROID","appium:appActivity":".Settings","appium:deviceName":"Xiaomi M2012K11AG (Android 12)","platformName":"Android","appium:automationName":"uiautomator2","appium:platformVersion":"12","appium:appPackage":"com.android.settings"},"capabilities":{"firstMatch":[{"appium:appActivity":".Settings","appium:appPackage":"com.android.settings","appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","appium:deviceName":"Xiaomi M2012K11AG (Android 12)","appium:newCommandTimeout":1800,"appium:platformName":"ANDROID","appium:platformVersion":"12","appium:systemPort":8222,"appium:udid":"6109daca","platformName":"android"}]}}
 [38;5;32m[BaseDriver][0m Ignoring capability 'appium:platformName=ANDROID' and using capability 'platformName=android'
 [38;5;32m[BaseDriver][0m The capabilities ["platformName"] are standard capabilities and do not require "appium:" prefix
 [Appium] Attempting to find matching driver for automationName 'uiautomator2' and platformName 'android'
 [Appium] The 'uiautomator2' driver was installed and matched caps.
 [Appium] Will require it at /Users/dimasrizki/.appium/node_modules/appium-uiautomator2-driver
-[38;5;16m[AppiumDriver@41b9][0m Appium v2.5.1 creating new AndroidUiautomator2Driver (v2.45.1) session
-[38;5;16m[AppiumDriver@41b9][0m Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
-[38;5;16m[AppiumDriver@41b9][0m Appium's BaseDriver version is 9.5.2
-[38;5;16m[AppiumDriver@41b9][0m AndroidUiautomator2Driver's BaseDriver version is 9.5.2
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Session created with session id: 82a9aa77-db17-42c5-bfd3-1309ccea39a2
+[38;5;16m[AppiumDriver@de1f][0m Appium v2.5.1 creating new AndroidUiautomator2Driver (v2.45.1) session
+[38;5;16m[AppiumDriver@de1f][0m Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+[38;5;16m[AppiumDriver@de1f][0m Appium's BaseDriver version is 9.5.2
+[38;5;16m[AppiumDriver@de1f][0m AndroidUiautomator2Driver's BaseDriver version is 9.5.2
+[38;5;48m[AndroidUiautomator2Driver@0324 (44d66452)][0m Session created with session id: 44d66452-17ea-40c7-bb7f-7c2faf6faa36
 [38;5;64m[ADB][0m Found 1 'build-tools' folders under '/Users/dimasrizki/.katalon/tools/android_sdk' (newest first):
 [38;5;64m[ADB][0m     /Users/dimasrizki/.katalon/tools/android_sdk/build-tools/29.0.3
 [38;5;64m[ADB][0m Using 'adb' from '/Users/dimasrizki/.katalon/tools/android_sdk/platform-tools/adb'
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Retrieving device list
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Using device: 6109daca
+[38;5;48m[AndroidUiautomator2Driver@0324 (44d66452)][0m Retrieving device list
+[38;5;48m[AndroidUiautomator2Driver@0324 (44d66452)][0m Using device: 6109daca
 [38;5;64m[ADB][0m Using 'adb' from '/Users/dimasrizki/.katalon/tools/android_sdk/platform-tools/adb'
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Starting 'com.android.settings' directly on the device
+[38;5;48m[AndroidUiautomator2Driver@0324 (44d66452)][0m Starting 'com.android.settings' directly on the device
 [38;5;64m[ADB][0m Getting device platform version
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Relaxing hidden api policy
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m No app sent in, not parsing package/activity
+[38;5;48m[AndroidUiautomator2Driver@0324 (44d66452)][0m Relaxing hidden api policy
+[38;5;48m[AndroidUiautomator2Driver@0324 (44d66452)][0m No app sent in, not parsing package/activity
 [38;5;64m[ADB][0m Using 'apksigner.jar' from '/Users/dimasrizki/.katalon/tools/android_sdk/build-tools/29.0.3/lib/apksigner.jar'
 [38;5;64m[ADB][0m '/Users/dimasrizki/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
 [38;5;64m[ADB][0m '/Users/dimasrizki/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v6.0.9.apk' is signed with the default certificate
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Server packages are not going to be (re)installed
+[38;5;48m[AndroidUiautomator2Driver@0324 (44d66452)][0m Server packages are not going to be (re)installed
 [38;5;64m[ADB][0m Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Starting UIAutomator2 server 6.0.9
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Using UIAutomator2 server from '/Users/dimasrizki/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v6.0.9.apk' and test from '/Users/dimasrizki/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Waiting up to 30000ms for UiAutomator2 to be online...
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m socket hang up
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m socket hang up
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Determined the downstream protocol as 'W3C'
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Screen already unlocked, doing nothing
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Starting 'com.android.settings/.Settings and waiting for 'com.android.settings/.Settings'
-[38;5;16m[AppiumDriver@41b9][0m New AndroidUiautomator2Driver session created successfully, session 82a9aa77-db17-42c5-bfd3-1309ccea39a2 added to master session list
-[38;5;0m[HTTP][0m <-- POST /wd/hub/session 200 7462 ms - 1076
+[38;5;48m[AndroidUiautomator2Driver@0324 (44d66452)][0m Starting UIAutomator2 server 6.0.9
+[38;5;48m[AndroidUiautomator2Driver@0324 (44d66452)][0m Using UIAutomator2 server from '/Users/dimasrizki/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v6.0.9.apk' and test from '/Users/dimasrizki/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+[38;5;48m[AndroidUiautomator2Driver@0324 (44d66452)][0m Waiting up to 30000ms for UiAutomator2 to be online...
+[38;5;48m[AndroidUiautomator2Driver@0324 (44d66452)][0m socket hang up
+[38;5;48m[AndroidUiautomator2Driver@0324 (44d66452)][0m socket hang up
+[38;5;48m[AndroidUiautomator2Driver@0324 (44d66452)][0m Determined the downstream protocol as 'W3C'
+[38;5;48m[AndroidUiautomator2Driver@0324 (44d66452)][0m Screen already unlocked, doing nothing
+[38;5;48m[AndroidUiautomator2Driver@0324 (44d66452)][0m Starting 'com.android.settings/.Settings and waiting for 'com.android.settings/.Settings'
+[38;5;16m[AppiumDriver@de1f][0m New AndroidUiautomator2Driver session created successfully, session 44d66452-17ea-40c7-bb7f-7c2faf6faa36 added to master session list
+[38;5;0m[HTTP][0m <-- POST /wd/hub/session 200 6193 ms - 1076
 [38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/44d66452-17ea-40c7-bb7f-7c2faf6faa36[39m
 [38;5;0m[HTTP][0m {}
-[38;5;0m[HTTP][0m <-- GET /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2 200 13 ms - 310
+[38;5;0m[HTTP][0m <-- GET /wd/hub/session/44d66452-17ea-40c7-bb7f-7c2faf6faa36 200 8 ms - 310
 [38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/44d66452-17ea-40c7-bb7f-7c2faf6faa36[39m
 [38;5;0m[HTTP][0m {}
-[38;5;0m[HTTP][0m <-- GET /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2 200 8 ms - 310
+[38;5;0m[HTTP][0m <-- GET /wd/hub/session/44d66452-17ea-40c7-bb7f-7c2faf6faa36 200 6 ms - 310
 [38;5;0m[HTTP][0m 
 [38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [38;5;0m[HTTP][0m {}
-[38;5;0m[HTTP][0m <-- GET /wd/hub/status 200 1 ms - 199
+[38;5;0m[HTTP][0m <-- GET /wd/hub/status 200 0 ms - 199
 [38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/timeouts[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/44d66452-17ea-40c7-bb7f-7c2faf6faa36/timeouts[39m
 [38;5;0m[HTTP][0m {"implicit":60000}
-[38;5;0m[HTTP][0m <-- POST /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/timeouts 200 2 ms - 14
+[38;5;0m[HTTP][0m <-- POST /wd/hub/session/44d66452-17ea-40c7-bb7f-7c2faf6faa36/timeouts 200 1 ms - 14
 [38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/appium/device/system_bars[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/44d66452-17ea-40c7-bb7f-7c2faf6faa36/appium/device/system_bars[39m
 [38;5;0m[HTTP][0m {}
-[38;5;0m[HTTP][0m <-- GET /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/appium/device/system_bars 200 78 ms - 151
+[38;5;0m[HTTP][0m <-- GET /wd/hub/session/44d66452-17ea-40c7-bb7f-7c2faf6faa36/appium/device/system_bars 200 69 ms - 151
 [38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/appium/device/activate_app[39m
-[38;5;0m[HTTP][0m {"bundleId":"com.android.mms"}
-[38;5;0m[HTTP][0m <-- POST /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/appium/device/activate_app 200 114 ms - 14
-[38;5;0m[HTTP][[38;5;0m[HTTP][0m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/1d39ab50-53a1-48fa-8fea-ad90704bf686[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/44d66452-17ea-40c7-bb7f-7c2faf6faa36/appium/device/activate_app[39m
+[38;5;0m[HTTP][0m {"bundleId":"org.zwanoo.android.speedtest"}
+[38;5;0m[HTTP][0m <-- POST /wd/hub/session/44d66452-17ea-40c7-bb7f-7c2faf6faa36/appium/device/activate_app 200 118 ms - 14
+[38;5;0m[HTTP][0m 
+[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/44d66452-17ea-40c7-bb7f-7c2faf6faa36/source[39m
 [38;5;0m[HTTP][0m {}
-[38;5;16m[AppiumDriver@3db4][0m Removing session 1d39ab50-53a1-48fa-8fea-ad90704bf686 from our master session list
-[38;5;48m[AndroidUiautomator2Driver@2921 (1d39ab50)][0m Did not get confirmation UiAutomator2 deleteSession worked; Error was: UnknownError: An unknown server-side error occurred while processing the command. Original error: 'DELETE /' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
-[38;5;48m[AndroidUiautomator2Driver@2921 (1d39ab50)][0m Restoring hidden api policy to the device default configuration
-[38;5;0m[HTTP][0m <-- DELETE /wd/hub/session/1d39ab50-53a1-48fa-8fea-ad90704bf686 200 353 ms - 14
+[38;5;48m[AndroidUiautomator2Driver@0324 (44d66452)][0m Driver proxy active, passing request on via HTTP proxy
+[38;5;48m[AndroidUiautomator2Driver@0324 (44d66452)][0m Replacing sessionId 8008db2e-51f7-4f9d-9508-e2a9c0b3d827 with 44d66452-17ea-40c7-bb7f-7c2faf6faa36
+[38;5;0m[HTTP][0m <-- GET /wd/hub/session/44d66452-17ea-40c7-bb7f-7c2faf6faa36/source 200 1309 ms - 70059
 [38;5;0m[HTTP][0m 
-[Appium] Received SIGTERM - shutting down
-[38;5;0m[HTTP][0m Waiting until the server is closed
-[38;5;0m[HTTP][0m Received server close event
-an! Jangan berikan kode OTP kepada siapa pun. Kode OTP Orbit: 595899 berlaku selama 5 menit.' or . = 'Hindari penipuan! Jangan berikan kode OTP kepada siapa pun. Kode OTP Orbit: 595899 berlaku selama 5 menit.') and @resource-id = 'com.android.mms:id/message_body']"}
-[38;5;0m[HTTP][0m <-- POST /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/elements 200 310 ms - 139
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/timeouts[39m
-[38;5;0m[HTTP][0m {"implicit":1000}
-[38;5;0m[HTTP][0m <-- POST /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/timeouts 200 1 ms - 14
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/elements[39m
-[38;5;0m[HTTP][0m {"using":"xpath","value":"//*[@class = 'android.widget.TextView' and (@text = 'Hindari penipuan! Jangan berikan kode OTP kepada siapa pun. Kode OTP Orbit: 595899 berlaku selama 5 menit.' or . = 'Hindari penipuan! Jangan berikan kode OTP kepada siapa pun. Kode OTP Orbit: 595899 berlaku selama 5 menit.') and @resource-id = 'com.android.mms:id/message_body']"}
-[38;5;0m[HTTP][0m <-- POST /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/elements 200 275 ms - 139
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff00000184/location[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/44d66452-17ea-40c7-bb7f-7c2faf6faa36/screenshot[39m
 [38;5;0m[HTTP][0m {}
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Driver proxy active, passing request on via HTTP proxy
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Replacing sessionId 0ec7c2b2-fe30-4a98-9663-5006060b4832 with 82a9aa77-db17-42c5-bfd3-1309ccea39a2
-[38;5;0m[HTTP][0m <-- GET /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff00000184/location 200 32 ms - 78
+[38;5;0m[HTTP][0m <-- GET /wd/hub/session/44d66452-17ea-40c7-bb7f-7c2faf6faa36/screenshot 200 421 ms - 826020
 [38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff00000184/size[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/44d66452-17ea-40c7-bb7f-7c2faf6faa36/elements[39m
+[38;5;0m[HTTP][0m {"using":"xpath","value":"//*[@class = 'android.widget.TextView' and (@text = 'Test Again' or . = 'Test Again') and @resource-id = 'org.zwanoo.android.speedtest:id/suite_completed_feedback_assembly_test_again']"}
+[38;5;0m[HTTP][0m <-- POST /wd/hub/session/44d66452-17ea-40c7-bb7f-7c2faf6faa36/elements 200 705 ms - 139
+[38;5;0m[HTTP][0m 
+[38;5;0m[HTTP][0m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/44d66452-17ea-40c7-bb7f-7c2faf6faa36[39m
 [38;5;0m[HTTP][0m {}
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Driver proxy active, passing request on via HTTP proxy
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Replacing sessionId 0ec7c2b2-fe30-4a98-9663-5006060b4832 with 82a9aa77-db17-42c5-bfd3-1309ccea39a2
-[38;5;0m[HTTP][0m <-- GET /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff00000184/size 200 20 ms - 87
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/timeouts[39m
-[38;5;0m[HTTP][0m {"implicit":1000}
-[38;5;0m[HTTP][0m <-- POST /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/timeouts 200 1 ms - 14
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/elements[39m
-[38;5;0m[HTTP][0m {"using":"xpath","value":"//*[@class = 'android.widget.TextView' and (@text = 'Hindari penipuan! Jangan berikan kode OTP kepada siapa pun. Kode OTP Orbit: 595899 berlaku selama 5 menit.' or . = 'Hindari penipuan! Jangan berikan kode OTP kepada siapa pun. Kode OTP Orbit: 595899 berlaku selama 5 menit.') and @resource-id = 'com.android.mms:id/message_body']"}
-[38;5;0m[HTTP][0m <-- POST /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/elements 200 196 ms - 139
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff00000184/location[39m
-[38;5;0m[HTTP][0m {}
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Driver proxy active, passing request on via HTTP proxy
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Replacing sessionId 0ec7c2b2-fe30-4a98-9663-5006060b4832 with 82a9aa77-db17-42c5-bfd3-1309ccea39a2
-[38;5;0m[HTTP][0m <-- GET /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff00000184/location 200 20 ms - 78
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff00000184/size[39m
-[38;5;0m[HTTP][0m {}
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Driver proxy active, passing request on via HTTP proxy
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Replacing sessionId 0ec7c2b2-fe30-4a98-9663-5006060b4832 with 82a9aa77-db17-42c5-bfd3-1309ccea39a2
-[38;5;0m[HTTP][0m <-- GET /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff00000184/size 200 20 ms - 87
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/timeouts[39m
-[38;5;0m[HTTP][0m {"implicit":1000}
-[38;5;0m[HTTP][0m <-- POST /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/timeouts 200 8 ms - 14
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/elements[39m
-[38;5;0m[HTTP][0m {"using":"xpath","value":"//*[@class = 'android.widget.TextView' and (@text = 'Hindari penipuan! Jangan berikan kode OTP kepada siapa pun. Kode OTP Orbit: 595899 berlaku selama 5 menit.' or . = 'Hindari penipuan! Jangan berikan kode OTP kepada siapa pun. Kode OTP Orbit: 595899 berlaku selama 5 menit.') and @resource-id = 'com.android.mms:id/message_body']"}
-[38;5;0m[HTTP][0m <-- POST /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/elements 200 256 ms - 139
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff00000184/location[39m
-[38;5;0m[HTTP][0m {}
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Driver proxy active, passing request on via HTTP proxy
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Replacing sessionId 0ec7c2b2-fe30-4a98-9663-5006060b4832 with 82a9aa77-db17-42c5-bfd3-1309ccea39a2
-[38;5;0m[HTTP][0m <-- GET /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff00000184/location 200 24 ms - 78
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff00000184/size[39m
-[38;5;0m[HTTP][0m {}
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Driver proxy active, passing request on via HTTP proxy
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Replacing sessionId 0ec7c2b2-fe30-4a98-9663-5006060b4832 with 82a9aa77-db17-42c5-bfd3-1309ccea39a2
-[38;5;0m[HTTP][0m <-- GET /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff00000184/size 200 42 ms - 87
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/elements[39m
-[38;5;0m[HTTP][0m {"using":"xpath","value":"//*[@class = 'android.widget.RelativeLayout' and @resource-id = 'com.android.mms:id/bubble_body' and (@text = '' or . = '')]"}
-[38;5;0m[HTTP][0m <-- POST /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/elements 200 271 ms - 395
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/elements[39m
-[38;5;0m[HTTP][0m {"using":"id","value":"com.android.mms:id/bubble_body"}
-[38;5;0m[HTTP][0m <-- POST /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/elements 200 96 ms - 395
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/elements[39m
-[38;5;0m[HTTP][0m {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.RelativeLayout\").resourceId(\"com.android.mms:id/bubble_body\")"}
-[38;5;0m[HTTP][0m <-- POST /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/elements 200 122 ms - 395
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/elements[39m
-[38;5;0m[HTTP][0m {"using":"xpath","value":"//*[@class = 'android.widget.TextView' and (@text = 'Hindari penipuan! Jangan berikan kode OTP kepada siapa pun. Kode OTP Orbit: 595899 berlaku selama 5 menit.' or . = 'Hindari penipuan! Jangan berikan kode OTP kepada siapa pun. Kode OTP Orbit: 595899 berlaku selama 5 menit.') and @resource-id = 'com.android.mms:id/message_body']"}
-[38;5;0m[HTTP][0m <-- POST /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/elements 200 240 ms - 139
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/timeouts[39m
-[38;5;0m[HTTP][0m {"implicit":1000}
-[38;5;0m[HTTP][0m <-- POST /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/timeouts 200 2 ms - 14
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/elements[39m
-[38;5;0m[HTTP][0m {"using":"xpath","value":"//*[@class = 'android.widget.TextView' and (@text = '' or . = '') and @resource-id = 'com.android.mms:id/message_body']"}
-[38;5;0m[HTTP][0m <-- POST /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/elements 200 207 ms - 395
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff00000184/location[39m
-[38;5;0m[HTTP][0m {}
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Driver proxy active, passing request on via HTTP proxy
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Replacing sessionId 0ec7c2b2-fe30-4a98-9663-5006060b4832 with 82a9aa77-db17-42c5-bfd3-1309ccea39a2
-[38;5;0m[HTTP][0m <-- GET /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff00000184/location 200 28 ms - 78
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff00000184/size[39m
-[38;5;0m[HTTP][0m {}
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Driver proxy active, passing request on via HTTP proxy
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Replacing sessionId 0ec7c2b2-fe30-4a98-9663-5006060b4832 with 82a9aa77-db17-42c5-bfd3-1309ccea39a2
-[38;5;0m[HTTP][0m <-- GET /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff00000184/size 200 40 ms - 87
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff00000160/location[39m
-[38;5;0m[HTTP][0m {}
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Driver proxy active, passing request on via HTTP proxy
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Replacing sessionId 0ec7c2b2-fe30-4a98-9663-5006060b4832 with 82a9aa77-db17-42c5-bfd3-1309ccea39a2
-[38;5;0m[HTTP][0m <-- GET /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff00000160/location 200 30 ms - 78
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff00000160/size[39m
-[38;5;0m[HTTP][0m {}
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Driver proxy active, passing request on via HTTP proxy
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Replacing sessionId 0ec7c2b2-fe30-4a98-9663-5006060b4832 with 82a9aa77-db17-42c5-bfd3-1309ccea39a2
-[38;5;0m[HTTP][0m <-- GET /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff00000160/size 200 47 ms - 87
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff0000013c/location[39m
-[38;5;0m[HTTP][0m {}
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Driver proxy active, passing request on via HTTP proxy
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Replacing sessionId 0ec7c2b2-fe30-4a98-9663-5006060b4832 with 82a9aa77-db17-42c5-bfd3-1309ccea39a2
-[38;5;0m[HTTP][0m <-- GET /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff0000013c/location 200 33 ms - 79
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff0000013c/size[39m
-[38;5;0m[HTTP][0m {}
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Driver proxy active, passing request on via HTTP proxy
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Replacing sessionId 0ec7c2b2-fe30-4a98-9663-5006060b4832 with 82a9aa77-db17-42c5-bfd3-1309ccea39a2
-[38;5;0m[HTTP][0m <-- GET /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff0000013c/size 200 31 ms - 87
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/timeouts[39m
-[38;5;0m[HTTP][0m {"implicit":1000}
-[38;5;0m[HTTP][0m <-- POST /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/timeouts 200 3 ms - 14
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/elements[39m
-[38;5;0m[HTTP][0m {"using":"xpath","value":"(//*[@class = 'android.widget.TextView' and (@text = '' or . = '') and @resource-id = 'com.android.mms:id/message_body'])[1]"}
-[38;5;0m[HTTP][0m <-- POST /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/elements 200 242 ms - 139
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff00000184/location[39m
-[38;5;0m[HTTP][0m {}
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Driver proxy active, passing request on via HTTP proxy
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Replacing sessionId 0ec7c2b2-fe30-4a98-9663-5006060b4832 with 82a9aa77-db17-42c5-bfd3-1309ccea39a2
-[38;5;0m[HTTP][0m <-- GET /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff00000184/location 200 19 ms - 78
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff00000184/size[39m
-[38;5;0m[HTTP][0m {}
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Driver proxy active, passing request on via HTTP proxy
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Replacing sessionId 0ec7c2b2-fe30-4a98-9663-5006060b4832 with 82a9aa77-db17-42c5-bfd3-1309ccea39a2
-[38;5;0m[HTTP][0m <-- GET /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff00000184/size 200 41 ms - 87
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/timeouts[39m
-[38;5;0m[HTTP][0m {"implicit":1000}
-[38;5;0m[HTTP][0m <-- POST /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/timeouts 200 1 ms - 14
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/elements[39m
-[38;5;0m[HTTP][0m {"using":"xpath","value":"(//*[@class = 'android.widget.TextView' and (@text = '' or . = '') and @resource-id = 'com.android.mms:id/message_body'])[last()]"}
-[38;5;0m[HTTP][0m <-- POST /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/elements 200 237 ms - 139
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff0000013c/location[39m
-[38;5;0m[HTTP][0m {}
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Driver proxy active, passing request on via HTTP proxy
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Replacing sessionId 0ec7c2b2-fe30-4a98-9663-5006060b4832 with 82a9aa77-db17-42c5-bfd3-1309ccea39a2
-[38;5;0m[HTTP][0m <-- GET /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff0000013c/location 200 28 ms - 79
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff0000013c/size[39m
-[38;5;0m[HTTP][0m {}
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Driver proxy active, passing request on via HTTP proxy
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Replacing sessionId 0ec7c2b2-fe30-4a98-9663-5006060b4832 with 82a9aa77-db17-42c5-bfd3-1309ccea39a2
-[38;5;0m[HTTP][0m <-- GET /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2/element/00000000-0000-0257-ffff-ffff0000013c/size 200 36 ms - 87
-[38;5;0m[HTTP][0m 
-[38;5;0m[HTTP][0m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2[39m
-[38;5;0m[HTTP][0m {}
-[38;5;16m[AppiumDriver@41b9][0m Removing session 82a9aa77-db17-42c5-bfd3-1309ccea39a2 from our master session list
-[38;5;48m[AndroidUiautomator2Driver@e867 (82a9aa77)][0m Restoring hidden api policy to the device default configuration
-[38;5;0m[HTTP][0m <-- DELETE /wd/hub/session/82a9aa77-db17-42c5-bfd3-1309ccea39a2 200 655 ms - 14
+[38;5;16m[AppiumDriver@de1f][0m Removing session 44d66452-17ea-40c7-bb7f-7c2faf6faa36 from our master session list
+[38;5;48m[AndroidUiautomator2Driver@0324 (44d66452)][0m Restoring hidden api policy to the device default configuration
+[38;5;0m[HTTP][0m <-- DELETE /wd/hub/session/44d66452-17ea-40c7-bb7f-7c2faf6faa36 200 419 ms - 14
 [38;5;0m[HTTP][0m 
 [Appium] Received SIGTERM - shutting down
 [38;5;0m[HTTP][0m Waiting until the server is closed

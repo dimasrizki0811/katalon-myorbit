@@ -50,7 +50,7 @@ Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screensh
 
 Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.waitForElementPresent(findTestObject('Object Repository/Step consume quota/android.widget.TextView - Mbps'), 0)
+Mobile.waitForElementPresent(findTestObject('Object Repository/Step consume quota/Confirm End Speedtest'), 0)
 
 WebUI.comment('Melihat Result Speedtest')
 
