@@ -53,7 +53,7 @@ Mobile.tap(findTestObject('Object Repository/new step parameterize/Harga Paket',
 Mobile.waitForElementPresent(findTestObject('Object Repository/Step awal sampai metode pembayaran/android.widget.TextView - Deskripsi Paket'), 
     0)
 
-Mobile.comment('Detail Paket - Deskripsi Paket')
+Mobile.comment('Detail Paket  Deskripsi Paket')
 
 Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot2058095286556113829.png')
 
@@ -62,7 +62,7 @@ Mobile.tap(findTestObject('Object Repository/Step awal sampai metode pembayaran/
 Mobile.waitForElementPresent(findTestObject('Object Repository/Step awal sampai metode pembayaran/android.widget.TextView - 1)'), 
     0)
 
-Mobile.comment('Detail Paket - Syarat dan Ketentuan')
+Mobile.comment('Detail Paket  Syarat dan Ketentuan')
 
 Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot2058095286556113821.png')
 
@@ -81,6 +81,7 @@ Mobile.comment('Menuju Ke Halaman Motode Pembayaran dan Pilih Metode Pembayaran 
 Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot14538088816619485564.png')
 Mobile.scrollToText("Cicilan Tanpa Kartu Kredit")
 Mobile.delay(3)
+Mobile.closeApplication();
 
 
 // ======================> PAYMENT PROCEED
@@ -100,34 +101,34 @@ Mobile.delay(3)
 
 //Mobile.closeApplication()
 
-// ======================> CHECK INBOX MY ORBIT
+// ======================> CHECK INBOX MY ORBIT ========> COMMENT DULU KARENA DI STEP DARI PAK ANDRI TIDAK ADA CHCEK NOTIFIKASI
 
-Mobile.startExistingApplication('com.myorbit')
-Mobile.waitForElementPresent(findTestObject('Object Repository/Step awal sampai metode pembayaran/android.view.ViewGroup'),
-	0)
-
-Mobile.waitForElementPresent(findTestObject('Object Repository/Step awal sampai metode pembayaran/android.widget.ImageView'),
-	0)
-
-Mobile.tap(findTestObject('Object Repository/new step parameterize/button notification'), 0)
-
-Mobile.delay(2)
+//Mobile.startExistingApplication('com.myorbit')
+//Mobile.waitForElementPresent(findTestObject('Object Repository/Step awal sampai metode pembayaran/android.view.ViewGroup'),
+//	0)
 //
-Mobile.comment('Check Inbox My Orbit')
-
-Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot12744918902500336899.png')
-
-Mobile.tap(findTestObject('Object Repository/Check Inbox Steps/android.view.ViewGroup (2)'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Check Inbox Steps/android.widget.TextView - Info'), 0)
-
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.comment('Check Detail Inbox My Orbit')
-
-Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot16085326726417010224.png')
-
-Mobile.closeApplication()
+//Mobile.waitForElementPresent(findTestObject('Object Repository/Step awal sampai metode pembayaran/android.widget.ImageView'),
+//	0)
+//
+//Mobile.tap(findTestObject('Object Repository/new step parameterize/button notification'), 0)
+//
+//Mobile.delay(2)
+////
+//Mobile.comment('Check Inbox My Orbit')
+//
+//Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot12744918902500336899.png')
+//
+//Mobile.tap(findTestObject('Object Repository/Check Inbox Steps/android.view.ViewGroup (2)'), 0)
+//
+//Mobile.tap(findTestObject('Object Repository/Check Inbox Steps/android.widget.TextView - Info'), 0)
+//
+//Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+//
+//Mobile.comment('Check Detail Inbox My Orbit')
+//
+//Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot16085326726417010224.png')
+//
+//Mobile.closeApplication()
 
 
 

@@ -67,7 +67,7 @@ Mobile.waitForElementPresent(findTestObject('Object Repository/Step awal sampai 
 Mobile.waitForElementPresent(findTestObject('Object Repository/Step awal sampai metode pembayaran/android.widget.ImageView'),
 	0)
 
-Mobile.comment('Balance dan Kuota Paket Before')
+Mobile.comment('Balance dan Kuota Paket After')
 
 Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot16124086500829190260.png')
 
