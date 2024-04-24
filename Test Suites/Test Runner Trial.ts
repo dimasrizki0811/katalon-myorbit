@@ -12,10 +12,10 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>da25ef30-c764-48ef-972c-dead0522e71e</testSuiteGuid>
    <testCaseLink>
-      <guid>518729b5-b898-4739-bc53-68b50668c2f4</guid>
+      <guid>26c7ccf3-4b56-450f-852d-26c260e91203</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Buy Package My Orbit Rev2</testCaseId>
+      <testCaseId>Test Cases/Get text otp</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
