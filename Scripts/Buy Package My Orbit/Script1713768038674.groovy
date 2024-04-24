@@ -17,6 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+
+// ===============>>>>> BUY PACKAGE ORBIT
 //======================> START APPLICATION
 Mobile.startExistingApplication('com.myorbit')
 
@@ -27,82 +29,106 @@ Mobile.waitForElementPresent(findTestObject('Object Repository/Step awal sampai 
     0)
 
 //======================> CHECK QUOTA AND BALANCE BEFORE
-
 Mobile.comment('Balance Dan Kuota Sebelum')
-Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot16124086500829190260.png')
 
+Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot10985552080094151514.png')
 
 //======================> GO TO SHOP PAGE
-Mobile.tap(findTestObject('Object Repository/Step awal sampai metode pembayaran/Button Menu',[('menu'):'Store']), 0) // klik menu shop
+Mobile.tap(findTestObject('Object Repository/Step awal sampai metode pembayaran/Button Menu', [('menu') : 'Store']), 0 // klik menu shop
+    )
+
 Mobile.delay(2)
+
 //======================> FILTER SUB MENU
 // MENUJU KE HALAMAN SHOP
 Mobile.tap(findTestObject('Object Repository/new step parameterize/Tombol Filter'), 0)
-Mobile.tap(findTestObject('Object Repository/Step awal sampai metode pembayaran/Button Filter Internet Malam',[('text'):'Orbit Deals']), 0)
+
+Mobile.tap(findTestObject('Object Repository/Step awal sampai metode pembayaran/Button Filter Internet Malam', [('text') : 'Internet Malam']), 
+    0)
+
 Mobile.tap(findTestObject('Object Repository/Step awal sampai metode pembayaran/android.view.ViewGroup (4)'), 0)
+
 //Mobile.tap(findTestObject('Object Repository/new step parameterize/Submenu',[('submenu'):'Semua']), 0)
 Mobile.delay(2)
-//Mobile.scrollToText('Rp 31.000')
+
+Mobile.scrollToText('Rp 6.000')
+
 Mobile.comment('Menuju Ke Halaman Shop')
+
 Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot16617067492357837838.png')
 
-
 // ======================> GO TO DETAIL PACKAGE
-Mobile.tap(findTestObject('Object Repository/new step parameterize/Harga Paket',[('harga'):'Rp 31.000']), 0)
-
-Mobile.waitForElementPresent(findTestObject('Object Repository/Step awal sampai metode pembayaran/android.widget.TextView - Deskripsi Paket'), 
+Mobile.tap(findTestObject('Object Repository/new step parameterize/Choose Package Based On Kuota', [('kuota') : '3GB']), 
     0)
 
-Mobile.comment('Detail Paket  Deskripsi Paket')
+int status = 1
 
-Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot2058095286556113829.png')
+if (status == 1) {
+    Mobile.comment('Muncul Bottom Sheet Untuk Beli Lagi')
 
-Mobile.tap(findTestObject('Object Repository/Step awal sampai metode pembayaran/android.view.ViewGroup (6)'), 0)
+    Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot2058095286556112329.png')
 
-Mobile.waitForElementPresent(findTestObject('Object Repository/Step awal sampai metode pembayaran/android.widget.TextView - 1)'), 
-    0)
+    Mobile.tap(findTestObject('Object Repository/new step parameterize/Button Beli Lagi'), 0)
 
-Mobile.comment('Detail Paket  Syarat dan Ketentuan')
+    Mobile.waitForElementPresent(findTestObject('Object Repository/Transaction Steps/android.widget.TextView - ID Transaksi'), 
+        0)
 
-Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot2058095286556113821.png')
+    'Menuju Ke Halaman Status Transaksi Berhasil\n'
+    Mobile.comment('Menuju Ke Halaman Status Transaksi Berhasil')
 
+    Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot11429582412559342387.png')
+    // ======================> PAYMENT PROCEED
+} else {
+    Mobile.waitForElementPresent(findTestObject('Object Repository/Step awal sampai metode pembayaran/android.widget.TextView - Deskripsi Paket'), 
+        0)
 
+    Mobile.comment('Detail Paket  Deskripsi Paket')
 
-// ======================> GO TO PAYMENT METHOD
-Mobile.tap(findTestObject('Object Repository/Step awal sampai metode pembayaran/android.view.ViewGroup (7)'), 0)
+    Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot2058095286556113829.png')
 
-Mobile.verifyElementVisible(findTestObject('Object Repository/Step awal sampai metode pembayaran/android.widget.TextView - Pulsa Anda'), 
-    0)
+    Mobile.tap(findTestObject('Object Repository/Step awal sampai metode pembayaran/android.view.ViewGroup (6)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Transaction Steps/android.view.ViewGroup'), 0)
+    Mobile.waitForElementPresent(findTestObject('Object Repository/Step awal sampai metode pembayaran/android.widget.TextView - 1)'), 
+        0)
 
-Mobile.comment('Menuju Ke Halaman Motode Pembayaran dan Pilih Metode Pembayaran Pulsa')
+    Mobile.comment('Detail Paket  Syarat dan Ketentuan')
 
-Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot14538088816619485564.png')
-Mobile.scrollToText("Cicilan Tanpa Kartu Kredit")
-Mobile.delay(3)
-Mobile.closeApplication();
+    Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot2058095286556113821.png')
 
+    Mobile.tap(findTestObject('Object Repository/Step awal sampai metode pembayaran/android.view.ViewGroup (7)'), 0)
 
-// ======================> PAYMENT PROCEED
-//Mobile.tap(findTestObject('Object Repository/Transaction Steps/android.widget.TextView - Bayar'), 0)
+    Mobile.verifyElementVisible(findTestObject('Object Repository/Step awal sampai metode pembayaran/android.widget.TextView - Pulsa Anda'), 
+        0)
+
+    Mobile.tap(findTestObject('Object Repository/Transaction Steps/android.view.ViewGroup'), 0)
+
+    Mobile.comment('Menuju Ke Halaman Motode Pembayaran dan Pilih Metode Pembayaran Pulsa')
+
+    Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot14538088816619485564.png')
+
+    Mobile.scrollToText('Bayar')
+
+    Mobile.delay(3)
+
+//    Mobile.tap(findTestObject('Object Repository/Transaction Steps/android.widget.TextView - Bayar'), 0)
 //
-//Mobile.waitForElementPresent(findTestObject('Object Repository/Transaction Steps/android.widget.TextView - ID Transaksi'), 
-//    0)
+//    Mobile.waitForElementPresent(findTestObject('Object Repository/Transaction Steps/android.widget.TextView - ID Transaksi'), 
+//        0)
 //
-//Mobile.tap(findTestObject('Object Repository/Transaction Steps/android.widget.ImageView'), 0)
+//    Mobile.tap(findTestObject('Object Repository/Transaction Steps/android.widget.ImageView'), 0)
 //
-//'Menuju Ke Halaman Status Transaksi Berhasil\n'
-//Mobile.comment('Menuju Ke Halaman Status Transaksi Berhasil')
+//    'Menuju Ke Halaman Status Transaksi Berhasil\n'
+//    Mobile.comment('Menuju Ke Halaman Status Transaksi Berhasil')
 //
-//Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot11426582452559342387.png')
-//
-//Mobile.tap(findTestObject('Object Repository/Transaction Steps/android.view.ViewGroup (1)'), 0)
+//    Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot11426582452559342387.png')
+}
 
-//Mobile.closeApplication()
+
+Mobile.closeApplication()
+
+Thread.sleep(60000)
 
 // ======================> CHECK INBOX MY ORBIT ========> COMMENT DULU KARENA DI STEP DARI PAK ANDRI TIDAK ADA CHCEK NOTIFIKASI
-
 //Mobile.startExistingApplication('com.myorbit')
 //Mobile.waitForElementPresent(findTestObject('Object Repository/Step awal sampai metode pembayaran/android.view.ViewGroup'),
 //	0)
@@ -129,20 +155,54 @@ Mobile.closeApplication();
 //Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot16085326726417010224.png')
 //
 //Mobile.closeApplication()
-
-
-
 // ======================> CHECK QUOTA AFTER
-
 Mobile.startExistingApplication('com.myorbit')
 
-Mobile.waitForElementPresent(findTestObject('Object Repository/Step awal sampai metode pembayaran/android.view.ViewGroup'), 
-    0)
+Mobile.waitForElementPresent(findTestObject('Object Repository/Step awal sampai metode pembayaran/android.view.ViewGroup'),
+	0)
 
-Mobile.waitForElementPresent(findTestObject('Object Repository/Step awal sampai metode pembayaran/android.widget.ImageView'), 
-    0)
+Mobile.waitForElementPresent(findTestObject('Object Repository/Step awal sampai metode pembayaran/android.widget.ImageView'),
+	0)
+
+Thread.sleep(2000)
+'Get Device Height and Store in device_height variable'
+
+device_Height = Mobile.getDeviceHeight()
+
+'Get Width Height and Store in device_Width variable'
+
+device_Width = Mobile.getDeviceWidth()
+
+'Storing the startX value by dividing device width by 2. Because x coordinates are constant for Vertical Swiping'
+
+int startX = device_Width / 2
+
+'Here startX and endX values are equal for vertical Swiping for that assigning startX value to endX'
+
+int endX = startX
+
+'Storing the startY value'
+
+int startY = device_Height * 0.30
+
+'Storing the endY value'
+
+int endY = device_Height * 0.70
+
+'Swipe Vertical from top to bottom'
+
+Mobile.swipe(startX, endY, endX, startY)
+
+'Swipe Vertical from bottom to top'
+
+Mobile.swipe(startX, startY, endX, endY)
+
+
 Mobile.comment('Balance Dan Kuota Setelah')
-Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot16124086500829190233.png')
+
+Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot13830569871800556217.png')
 
 Mobile.closeApplication()
+
+
 

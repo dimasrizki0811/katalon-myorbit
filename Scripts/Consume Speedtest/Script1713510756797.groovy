@@ -17,6 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+// ===============>>>>> CONSUME SPEEDTEST
 // START APPLICATION and CHECK BALANCE&KUOTA BEFORE
 Mobile.startExistingApplication('com.myorbit')
 
@@ -28,7 +29,7 @@ Mobile.waitForElementPresent(findTestObject('Object Repository/Step awal sampai 
 
 Mobile.comment('Balance dan Kuota Paket Before')
 
-Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot16124086500829190260.png')
+Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot1562391428000008065.png')
 
 Mobile.closeApplication()
 
@@ -36,7 +37,7 @@ Mobile.startExistingApplication('org.zwanoo.android.speedtest')
 
 Mobile.waitForElementPresent(findTestObject('Object Repository/Step consume quota/android.view.View'), 0)
 
-WebUI.comment('Buka Aplikasi Speedtest')
+Mobile.comment('Buka Aplikasi Speedtest')
 
 Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot16277343731287010838.png')
 
@@ -48,15 +49,18 @@ WebUI.comment('Jalankan Speedtest')
 
 Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot16576112566209073.png')
 
-Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
+Thread.sleep(20000)
 
-Mobile.waitForElementPresent(findTestObject('Object Repository/Step consume quota/Confirm End Speedtest'), 0)
+Mobile.waitForElementPresent(findTestObject('Object Repository/new step parameterize/android.widget.TextView - DOWNLOAD'),
+	0)
 
-WebUI.comment('Melihat Result Speedtest')
+Mobile.comment('Melihat Result Speedtest')
 
 Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot13194284071448124261.png')
 
 Mobile.closeApplication()
+
+Mobile.delay(5)
 
 // START APPLICATION and CHECK BALANCE&KUOTA AFTER
 Mobile.startExistingApplication('com.myorbit')
@@ -69,7 +73,7 @@ Mobile.waitForElementPresent(findTestObject('Object Repository/Step awal sampai 
 
 Mobile.comment('Balance dan Kuota Paket After')
 
-Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot16124086500829190260.png')
+Mobile.takeScreenshot('/var/folders/zb/v8_yw3sd0md3rg_vr4q7p7880000gp/T/screenshot17596607106719789484.png')
 
 Mobile.closeApplication()
 
